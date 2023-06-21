@@ -1,0 +1,14 @@
+body {
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #467bac;
+  height: 100%;
+}
+
+.column-half > a {
+  color: white;
+  font-size: 2rem;
+  font-family: "Patua One", sans-serif;
+}
