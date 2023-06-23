@@ -47,14 +47,14 @@
   flex-basis: 50%;
 }
 
-.anime-list {
+.top-anime-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.manga-list {
+.top-manga-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
