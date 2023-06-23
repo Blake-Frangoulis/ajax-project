@@ -1,24 +1,9 @@
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 900px;
-  }
-
-  .column-full,
-  .column-half {
-    padding: 0 0.75rem;
-  }
-
-  .column-half {
-    width: 50%;
-  }
-}
-
 .hidden {
   display: none !important;
 }
 
 .container {
-  max-width: 575px;
+  width: 90%;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -28,7 +13,106 @@
   flex-wrap: wrap;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.navbar > a {
+  padding-bottom: 1rem;
+}
+
 .column-full,
-.column-half {
+.column-half,
+.column-fifth {
   width: 100%;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-half {
+  flex-basis: 100%;
+}
+
+.column-fifth {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.manga-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.card h3 {
+  align-self: flex-start;
+  padding-left: 1rem;
+}
+
+.image-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image {
+  width: 80%;
+  padding-bottom: 0.5rem;
+}
+
+.card-title {
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .column-full,
+  .column-half {
+    padding: 0 0.75rem;
+  }
+
+  .column-full {
+    flex-basis: 100%;
+  }
+
+  .column-half {
+    flex-basis: 50%;
+  }
+
+  .column-fifth {
+    flex-basis: 20%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }

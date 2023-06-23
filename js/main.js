@@ -1,5 +1,5 @@
 const topAnime = [];
-const topManga = [];
+// const topManga = [];
 
 function getTopAnime() {
   const xhr = new XMLHttpRequest();
@@ -14,17 +14,18 @@ function getTopAnime() {
 }
 
 getTopAnime();
+// console.log('topAnime:', topAnime);
 
-function getTopManga() {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://api.jikan.moe/v4/top/manga');
-  xhr.responseType = 'json';
-  xhr.addEventListener('load', function () {
-    for (let i = 0; i <= 24; i++) {
-      topManga.push(xhr.response.data[i]);
-    }
-  });
-  xhr.send();
-}
+// function getTopManga() {
+//   const xhr = new XMLHttpRequest();
+//   xhr.open('GET', 'https://api.jikan.moe/v4/top/manga');
+//   xhr.responseType = 'json';
+//   xhr.addEventListener('load', function () {
+//     for (let i = 0; i <= 24; i++) {
+//       topManga.push(xhr.response.data[i]);
+//     }
+//   });
+//   xhr.send();
+// }
 
-getTopManga();
+// getTopManga();

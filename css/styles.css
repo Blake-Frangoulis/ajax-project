@@ -5,10 +5,16 @@ body {
 header {
   background-color: #467bac;
   height: 100%;
+  margin-bottom: 2rem;
+  padding: 2rem;
 }
 
-.column-half > a {
+.column-full > a {
   color: white;
   font-size: 2rem;
   font-family: "Patua One", sans-serif;
+}
+
+.card {
+  background-color: rgb(217, 217, 217);
 }
