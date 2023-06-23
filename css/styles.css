@@ -17,4 +17,10 @@ header {
 
 .card {
   background-color: rgb(217, 217, 217);
+  font-family: roboto, sans-serif;
+  color: #467bac;
+}
+
+.card-title {
+  text-align: center;
 }
