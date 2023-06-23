@@ -1,7 +1,7 @@
 const $topAnimeList = document.querySelector('.top-anime-list');
 const $topMangaList = document.querySelector('.top-manga-list');
 const $animeAnchor = document.querySelector('.anime-anchor');
-const $mangaAnchor = document.querySelector('manga-anchor');
+const $mangaAnchor = document.querySelector('.manga-anchor');
 const topAnime = [];
 const topManga = [];
 
@@ -32,6 +32,16 @@ function getTopManga() {
 }
 
 getTopManga();
+
+function viewSwap(view) {
+  if (view === 'top-anime-list') {
+    $topAnimeList.classList.remove('hidden');
+    $topMangaList.classList.add('hidden');
+  } else if (view === 'top-manga-list') {
+    $topAnimeList.classList.add('hidden');
+    $topMangaList.classList.remove('hidden');
+  }
+}
 
 function renderTopAnime(card) {
 
@@ -110,6 +120,7 @@ function renderTopManga(card) {
 function createTopAnimeList(event) {
   for (let card = 0; card <= 24; card++) {
     $topAnimeList.appendChild(renderTopAnime(card));
+    viewSwap('top-anime-list');
   }
 }
 $animeAnchor.addEventListener('click', createTopAnimeList);
@@ -117,6 +128,7 @@ $animeAnchor.addEventListener('click', createTopAnimeList);
 function createTopMangaList(event) {
   for (let card = 0; card <= 24; card++) {
     $topMangaList.appendChild(renderTopManga(card));
+    viewSwap('top-manga-list');
   }
 }
 $mangaAnchor.addEventListener('click', createTopMangaList);
