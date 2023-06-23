@@ -22,7 +22,7 @@
 }
 
 .navbar > a {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .column-full,
@@ -45,6 +45,18 @@
   align-items: center;
   justify-content: center;
   flex-basis: 50%;
+}
+
+.top-anime-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-manga-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .top-anime-list {
@@ -90,6 +102,11 @@
 
 .card-title {
   justify-content: center;
+}
+
+.card-title > p {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .loading-screen {

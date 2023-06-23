@@ -2,6 +2,8 @@ const $topAnimeList = document.querySelector('.top-anime-list');
 const $topMangaList = document.querySelector('.top-manga-list');
 const $animeAnchor = document.querySelector('.anime-anchor');
 const $mangaAnchor = document.querySelector('.manga-anchor');
+const $topAnimeHeader = document.querySelector('.top-anime-header');
+const $topMangaHeader = document.querySelector('.top-manga-header');
 const $loadingScreen = document.querySelector('.loading-screen');
 const topAnime = [];
 const topManga = [];
@@ -36,9 +38,13 @@ getTopManga();
 
 function viewSwap(view) {
   if (view === 'top-anime-list') {
+    $topAnimeHeader.classList.remove('hidden');
+    $topMangaHeader.classList.add('hidden');
     $topAnimeList.classList.remove('hidden');
     $topMangaList.classList.add('hidden');
   } else if (view === 'top-manga-list') {
+    $topAnimeHeader.classList.add('hidden');
+    $topMangaHeader.classList.remove('hidden');
     $topAnimeList.classList.add('hidden');
     $topMangaList.classList.remove('hidden');
   }

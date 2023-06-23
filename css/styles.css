@@ -5,7 +5,6 @@ body {
 header {
   background-color: #467bac;
   height: 100%;
-  margin-bottom: 2rem;
   padding: 2rem;
 }
 
@@ -15,6 +14,16 @@ header {
   line-height: 32px;
   font-family: "Patua One", sans-serif;
   cursor: pointer;
+}
+
+.top-anime-header {
+  font-family: roboto, sans-serif;
+  color: #467bac;
+}
+
+.top-manga-header {
+  font-family: roboto, sans-serif;
+  color: #467bac;
 }
 
 .card {
