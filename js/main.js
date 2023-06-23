@@ -123,20 +123,24 @@ function renderTopManga(card) {
 function createTopAnimeList(event) {
   for (let card = 0; card <= 24; card++) {
     $topAnimeList.appendChild(renderTopAnime(card));
-    viewSwap('top-anime-list');
     $loadingScreen.classList.add('hidden');
   }
 }
-$animeAnchor.addEventListener('click', createTopAnimeList);
+$animeAnchor.addEventListener('click', event => {
+  viewSwap('top-anime-list');
+});
 
 function createTopMangaList(event) {
   for (let card = 0; card <= 24; card++) {
     $topMangaList.appendChild(renderTopManga(card));
-    viewSwap('top-manga-list');
   }
 }
-$mangaAnchor.addEventListener('click', createTopMangaList);
+$mangaAnchor.addEventListener('click', event => {
+  viewSwap('top-manga-list');
+});
 
 document.addEventListener('DOMContentLoaded', event => {
   setTimeout(createTopAnimeList, 1000);
+  viewSwap('top-anime-list');
+  setTimeout(createTopMangaList, 1000);
 });

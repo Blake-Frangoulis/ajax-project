@@ -11,8 +11,10 @@ header {
 
 .column-full > a {
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 32px;
   font-family: "Patua One", sans-serif;
+  cursor: pointer;
 }
 
 .card {
