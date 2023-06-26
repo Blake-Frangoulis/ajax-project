@@ -8,12 +8,13 @@ header {
   padding: 2rem;
 }
 
-.column-full > a {
+.navbar > a {
   color: white;
   font-size: 2.5rem;
   line-height: 32px;
   font-family: "Patua One", sans-serif;
   cursor: pointer;
+  padding-bottom: 1rem;
 }
 
 .top-anime-header {
@@ -34,4 +35,5 @@ header {
 
 .card-title {
   text-align: center;
+  font-size: 1.5rem;
 }

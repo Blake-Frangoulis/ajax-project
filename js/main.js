@@ -147,6 +147,6 @@ $mangaAnchor.addEventListener('click', event => {
 
 document.addEventListener('DOMContentLoaded', event => {
   setTimeout(createTopAnimeList, 1000);
-  viewSwap('top-anime-list');
+  setTimeout(event => { viewSwap('top-anime-list'); }, 1000);
   setTimeout(createTopMangaList, 1000);
 });
