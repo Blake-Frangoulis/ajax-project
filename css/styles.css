@@ -1,0 +1,39 @@
+body {
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #467bac;
+  height: 100%;
+  padding: 2rem;
+}
+
+.navbar > a {
+  color: white;
+  font-size: 2.5rem;
+  line-height: 32px;
+  font-family: "Patua One", sans-serif;
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.top-anime-header {
+  font-family: roboto, sans-serif;
+  color: #467bac;
+}
+
+.top-manga-header {
+  font-family: roboto, sans-serif;
+  color: #467bac;
+}
+
+.card {
+  background-color: rgb(217, 217, 217);
+  font-family: roboto, sans-serif;
+  color: #467bac;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.5rem;
+}

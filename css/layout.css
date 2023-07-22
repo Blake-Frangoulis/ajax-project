@@ -1,0 +1,159 @@
+.hidden {
+  display: none !important;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.navbar > a {
+  padding-bottom: 2rem;
+}
+
+.column-full,
+.column-half,
+.column-fifth {
+  width: 100%;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-half {
+  flex-basis: 100%;
+}
+
+.column-fifth {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.top-anime-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-manga-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.top-manga-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.card-header {
+  align-self: flex-start;
+  padding-left: 1rem;
+}
+
+.image-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.card-image {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-title {
+  justify-content: center;
+}
+
+.card-title > p {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.loading-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-screen > img {
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .column-full,
+  .column-half {
+    padding: 0 0.75rem;
+  }
+
+  .column-full {
+    flex-basis: 100%;
+  }
+
+  .column-half {
+    flex-basis: 50%;
+  }
+
+  .column-fifth {
+    flex-basis: 20%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .loading-screen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30rem;
+  }
+}
